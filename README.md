@@ -25,6 +25,10 @@ Here you have quick overview of all the tests passing:
 
 ![Get Arabic Numbers tests](docs/getArabicNumberTestsPassing.PNG)
 
+Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests.
+
+Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
+
 ### What's next?:
 - Continue developing the solution for roman numerals above 5.
 - Start implementing the conversion from Arabic numbers to roman numerals.
