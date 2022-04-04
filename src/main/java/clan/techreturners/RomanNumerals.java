@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class RomanNumerals {
     private static HashMap<Character, Integer> romanToNum = new HashMap<>() {{
         put('I', 1);
+        put('V', 5);
     }};
 
     public static int getArabicNumber(String romanNumber) {

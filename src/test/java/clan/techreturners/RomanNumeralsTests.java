@@ -16,6 +16,7 @@ public class RomanNumeralsTests {
             II  -> 2
             III -> 3
             IV  -> 4
+            V   -> 5
             """)
     public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
@@ -27,6 +28,7 @@ public class RomanNumeralsTests {
             ii  -> 2
             iii -> 3
             iv  -> 4
+            v   -> 5
             """)
     public void checkGetArabicNumberWhenRomanNumeralIsLowerCase(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
