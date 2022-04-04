@@ -40,4 +40,16 @@ public class RomanNumeralsTests {
         // Arrange
         assertEquals(3, result);
     }
+
+    @Test
+    public void shouldReturnFourWhenRomanNumeralIsFour() {
+        // Arrange
+        String romanNumber = "IV";
+
+        // Act
+        int result = RomanNumerals.getArabicNumber(romanNumber);
+
+        // Arrange
+        assertEquals(4, result);
+    }
 }

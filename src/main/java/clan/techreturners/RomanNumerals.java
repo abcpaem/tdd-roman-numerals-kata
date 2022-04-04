@@ -9,8 +9,10 @@ public class RomanNumerals {
 
     public static int getArabicNumber(String romanNumber) {
         int number = 0;
-        char[] romans = romanNumber.toCharArray();
 
+        romanNumber = romanNumber.replace("IV", "IIII");
+
+        char[] romans = romanNumber.toCharArray();
         for (char c : romans) {
             number += romanToNum.get(c);
         }
