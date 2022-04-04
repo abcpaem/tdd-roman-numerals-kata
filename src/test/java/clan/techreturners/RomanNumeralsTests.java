@@ -1,55 +1,19 @@
 package clan.techreturners;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanNumeralsTests {
-    @Test
-    public void shouldReturnOneWhenRomanNumeralIsOne() {
-        // Arrange
-        String romanNumber = "I";
-
-        // Act
-        int result = RomanNumerals.getArabicNumber(romanNumber);
-
-        // Arrange
-        assertEquals(1, result);
-    }
-
-    @Test
-    public void shouldReturnTwoWhenRomanNumeralIsTwo() {
-        // Arrange
-        String romanNumber = "II";
-
-        // Act
-        int result = RomanNumerals.getArabicNumber(romanNumber);
-
-        // Arrange
-        assertEquals(2, result);
-    }
-
-    @Test
-    public void shouldReturnThreeWhenRomanNumeralIsThree() {
-        // Arrange
-        String romanNumber = "III";
-
-        // Act
-        int result = RomanNumerals.getArabicNumber(romanNumber);
-
-        // Arrange
-        assertEquals(3, result);
-    }
-
-    @Test
-    public void shouldReturnFourWhenRomanNumeralIsFour() {
-        // Arrange
-        String romanNumber = "IV";
-
-        // Act
-        int result = RomanNumerals.getArabicNumber(romanNumber);
-
-        // Arrange
-        assertEquals(4, result);
+    @ParameterizedTest(name = "{index}) Roman numeral {0} is {1}")
+    @CsvSource(delimiterString = "->", textBlock = """
+            I   -> 1
+            II  -> 2
+            III -> 3
+            IV  -> 4
+            """)
+    public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
+        assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
     }
 }
