@@ -1,16 +1,20 @@
 package clan.techreturners;
 
+import java.util.HashMap;
+
 public class RomanNumerals {
+    private static HashMap<Character, Integer> romanToNum = new HashMap<>() {{
+        put('I', 1);
+    }};
+
     public static int getArabicNumber(String romanNumber) {
-        if (romanNumber == "I")
-            return 1;
-        else if (romanNumber == "II"){
-            return 2;
-        }
-        else if (romanNumber == "III"){
-            return 3;
+        int number = 0;
+        char[] romans = romanNumber.toCharArray();
+
+        for (char c : romans) {
+            number += romanToNum.get(c);
         }
 
-        return 0;
+        return number;
     }
 }
