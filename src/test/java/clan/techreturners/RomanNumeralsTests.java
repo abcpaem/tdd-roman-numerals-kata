@@ -16,4 +16,16 @@ public class RomanNumeralsTests {
         // Arrange
         assertEquals(1, result);
     }
+
+    @Test
+    public void shouldReturnTwoWhenRomanNumeralIsTwo() {
+        // Arrange
+        String romanNumber = "II";
+
+        // Act
+        int result = RomanNumerals.getArabicNumber(romanNumber);
+
+        // Arrange
+        assertEquals(2, result);
+    }
 }
