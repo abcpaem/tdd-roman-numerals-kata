@@ -1,5 +1,6 @@
 package clan.techreturners;
 
+import java.security.InvalidParameterException;
 import java.util.HashMap;
 
 public class RomanNumerals {
@@ -12,9 +13,13 @@ public class RomanNumerals {
 
         romanNumber = romanNumber.toUpperCase().replace("IV", "IIII");
 
-        char[] romans = romanNumber.toCharArray();
-        for (char c : romans) {
-            number += romanToNum.get(c);
+        try {
+            char[] romans = romanNumber.toCharArray();
+            for (char c : romans) {
+                number += romanToNum.get(c);
+            }
+        } catch (Exception e) {
+            throw new InvalidParameterException("Roman numeral is not valid or not supported");
         }
 
         return number;
