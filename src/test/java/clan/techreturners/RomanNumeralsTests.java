@@ -28,4 +28,16 @@ public class RomanNumeralsTests {
         // Arrange
         assertEquals(2, result);
     }
+
+    @Test
+    public void shouldReturnThreeWhenRomanNumeralIsThree() {
+        // Arrange
+        String romanNumber = "III";
+
+        // Act
+        int result = RomanNumerals.getArabicNumber(romanNumber);
+
+        // Arrange
+        assertEquals(3, result);
+    }
 }
