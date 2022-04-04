@@ -10,7 +10,7 @@ public class RomanNumerals {
     public static int getArabicNumber(String romanNumber) {
         int number = 0;
 
-        romanNumber = romanNumber.replace("IV", "IIII");
+        romanNumber = romanNumber.toUpperCase().replace("IV", "IIII");
 
         char[] romans = romanNumber.toCharArray();
         for (char c : romans) {

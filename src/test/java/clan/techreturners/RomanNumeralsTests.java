@@ -16,4 +16,15 @@ public class RomanNumeralsTests {
     public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
     }
+
+    @ParameterizedTest(name = "{index}) Roman numeral {0} is {1}")
+    @CsvSource(delimiterString = "->", textBlock = """
+            i   -> 1
+            ii  -> 2
+            iii -> 3
+            iv  -> 4
+            """)
+    public void checkGetArabicNumberWhenRomanNumeralIsLowerCase(String romanNumeral, Integer expectedArabicNumber) {
+        assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
+    }
 }
