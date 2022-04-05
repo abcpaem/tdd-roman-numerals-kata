@@ -12,11 +12,14 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class RomanNumeralsTests {
     @ParameterizedTest(name = "{index}) Roman numeral {0} is {1}")
     @CsvSource(delimiterString = "->", textBlock = """
-            I   -> 1
-            II  -> 2
-            III -> 3
-            IV  -> 4
-            V   -> 5
+            I    -> 1
+            II   -> 2
+            III  -> 3
+            IV   -> 4
+            V    -> 5
+            VI   -> 6
+            VII  -> 7
+            VIII -> 8
             """)
     public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
