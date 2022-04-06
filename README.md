@@ -21,7 +21,7 @@ Plan out and spend 30-45 minutes having a go at the Roman Numerals Kata using Te
 - Please check the commits to see how was the TDD process.
 - Please also feel free to clone the code and run all the tests locally.
 
-Click [here](docs/RomanNumeralsTestsResults.html) to have quick overview of all the tests passing.
+Click [here](https://htmlpreview.github.io/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html) to have quick overview of all the tests passing.
 
 Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests.
 
