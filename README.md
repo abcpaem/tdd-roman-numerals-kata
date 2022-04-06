@@ -15,15 +15,13 @@ Plan out and spend 30-45 minutes having a go at the Roman Numerals Kata using Te
 - Solve the Roman Numerals kata in Java programming language.
 
 ### Solution:
-- Actual solution converts roman numerals up to 5. It is only a class helper with tests.
+- The solution is only a class helper with tests.
 - I started writing simple tests and at some point they were refactored as parameterised tests for simplification.
 - The code also started from a simple solution to make the initial tests pass, then evolving to a more complex code until it reached its refactoring stage.   
 - Please check the commits to see how was the TDD process.
 - Please also feel free to clone the code and run all the tests locally.
 
-Here you have quick overview of all the tests passing:
-
-![Get Arabic Numbers tests](docs/getArabicNumberTestsPassing.PNG)
+Click [here](docs/RomanNumeralsTestsResults.html) to have quick overview of all the tests passing.
 
 Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests.
 
