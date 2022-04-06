@@ -10,16 +10,19 @@ public class RomanNumerals {
         put('X', 10);
         put('L', 50);
         put('C', 100);
+        put('D', 500);
     }};
 
     public static int getArabicNumber(String romanNumber) {
         int number = 0;
 
+        // // Replaces some roman numerals for their equivalent in our known roman numerals list
         romanNumber = romanNumber.toUpperCase()
                 .replace("IV", "IIII")
                 .replace("IX", "VIIII")
                 .replace("XL", "XXXX")
-                .replace("XC", "LXXXX");
+                .replace("XC", "LXXXX")
+                .replace("CD", "CCCC");
 
         try {
             char[] romans = romanNumber.toCharArray();
