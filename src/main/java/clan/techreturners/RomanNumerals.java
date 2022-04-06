@@ -9,6 +9,7 @@ public class RomanNumerals {
         put('V', 5);
         put('X', 10);
         put('L', 50);
+        put('C', 100);
     }};
 
     public static int getArabicNumber(String romanNumber) {
@@ -17,7 +18,8 @@ public class RomanNumerals {
         romanNumber = romanNumber.toUpperCase()
                 .replace("IV", "IIII")
                 .replace("IX", "VIIII")
-                .replace("XL", "XXXX");
+                .replace("XL", "XXXX")
+                .replace("XC", "LXXXX");
 
         try {
             char[] romans = romanNumber.toCharArray();

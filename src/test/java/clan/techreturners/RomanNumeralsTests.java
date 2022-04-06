@@ -24,6 +24,8 @@ public class RomanNumeralsTests {
             X    -> 10
             XL   -> 40
             L    -> 50
+            XC   -> 90
+            C    -> 100
             """)
     public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
