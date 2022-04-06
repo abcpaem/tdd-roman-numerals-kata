@@ -11,6 +11,7 @@ public class RomanNumerals {
         put('L', 50);
         put('C', 100);
         put('D', 500);
+        put('M', 1000);
     }};
 
     public static int getArabicNumber(String romanNumber) {
@@ -22,7 +23,8 @@ public class RomanNumerals {
                 .replace("IX", "VIIII")
                 .replace("XL", "XXXX")
                 .replace("XC", "LXXXX")
-                .replace("CD", "CCCC");
+                .replace("CD", "CCCC")
+                .replace("CM", "DCCCC");
 
         try {
             char[] romans = romanNumber.toCharArray();
