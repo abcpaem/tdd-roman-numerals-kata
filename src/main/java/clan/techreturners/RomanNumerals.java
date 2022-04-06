@@ -4,6 +4,9 @@ import java.security.InvalidParameterException;
 import java.util.HashMap;
 
 public class RomanNumerals {
+
+    static final String ROMAN_NUMERAL_REG_EXP = "^M{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$";
+    static final String INVALID_ROMAN_NUMERAL = "Roman numeral is not valid or not supported";
     private static HashMap<Character, Integer> romanToNum = new HashMap<>() {{
         put('I', 1);
         put('V', 5);
@@ -15,10 +18,15 @@ public class RomanNumerals {
     }};
 
     public static int getArabicNumber(String romanNumber) {
+        romanNumber = romanNumber.toUpperCase();
+
+        if (!romanNumber.matches(ROMAN_NUMERAL_REG_EXP))
+            throw new InvalidParameterException(INVALID_ROMAN_NUMERAL);
+
         int number = 0;
 
         // // Replaces some roman numerals for their equivalent in our known roman numerals list
-        romanNumber = romanNumber.toUpperCase()
+        romanNumber = romanNumber
                 .replace("IV", "IIII")
                 .replace("IX", "VIIII")
                 .replace("XL", "XXXX")
@@ -26,13 +34,9 @@ public class RomanNumerals {
                 .replace("CD", "CCCC")
                 .replace("CM", "DCCCC");
 
-        try {
-            char[] romans = romanNumber.toCharArray();
-            for (char c : romans) {
-                number += romanToNum.get(c);
-            }
-        } catch (Exception e) {
-            throw new InvalidParameterException("Roman numeral is not valid or not supported");
+        char[] romans = romanNumber.toCharArray();
+        for (char c : romans) {
+            number += romanToNum.get(c);
         }
 
         return number;
