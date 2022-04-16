@@ -1,5 +1,6 @@
 package clan.techreturners;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -31,7 +32,7 @@ public class RomanNumeralsTests {
             CM   -> 900
             M    -> 1000
             """)
-    public void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
+    void checkGetArabicNumber(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
     }
 
@@ -43,15 +44,27 @@ public class RomanNumeralsTests {
             iv  -> 4
             v   -> 5
             """)
-    public void checkGetArabicNumberWhenRomanNumeralIsLowerCase(String romanNumeral, Integer expectedArabicNumber) {
+    void checkGetArabicNumberWhenRomanNumeralIsLowerCase(String romanNumeral, Integer expectedArabicNumber) {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
     }
 
     @ParameterizedTest(name = "{index}) Roman Numeral {0} is invalid or not supported yet")
-    @ValueSource(strings = { "I̅V̅", "K", "XXXX", "XVIIII" })
-    public void checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String romanNumeral) {
+    @ValueSource(strings = {"I̅V̅", "K", "XXXX", "XVIIII"})
+    void checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String romanNumeral) {
         assertThrows(InvalidParameterException.class, () -> {
             RomanNumerals.getArabicNumber(romanNumeral);
         });
+    }
+
+    @Test
+    void checkGetRomanNumber() {
+        // Arrange
+        String expectedRoman = "I";
+
+        // Act
+        String romanNumber = RomanNumerals.getRomanNumber(1);
+
+        // Assert
+        assertEquals(expectedRoman, romanNumber);
     }
 }

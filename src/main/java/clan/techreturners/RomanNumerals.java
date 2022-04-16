@@ -41,4 +41,8 @@ public class RomanNumerals {
 
         return number;
     }
+
+    public static String getRomanNumber(int i) {
+        return "I";
+    }
 }

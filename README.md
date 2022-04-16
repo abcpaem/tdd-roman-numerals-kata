@@ -29,10 +29,8 @@ Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see th
 Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
 
 ### What's next?:
-- Continue developing the solution for roman numerals above 5.
 - Start implementing the conversion from Arabic numbers to roman numerals.
 - Add more edge case tests, like when parameter passed is null or empty.
-- Add regular expression to validate input for roman numerals.
 
 ---
 ## How to run the tests
