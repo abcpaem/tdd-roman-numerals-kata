@@ -2,6 +2,7 @@ package clan.techreturners;
 
 import java.security.InvalidParameterException;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class RomanNumerals {
 
@@ -15,6 +16,10 @@ public class RomanNumerals {
         put('C', 100);
         put('D', 500);
         put('M', 1000);
+    }};
+
+    private static LinkedHashMap<Integer, String> numToRoman = new LinkedHashMap<>() {{
+        put(1, "I");
     }};
 
     public static int getArabicNumber(String romanNumber) {
@@ -42,7 +47,14 @@ public class RomanNumerals {
         return number;
     }
 
-    public static String getRomanNumber(int i) {
-        return "I";
+    public static String getRomanNumeral(int number) {
+        String romanNumeral = "";
+        for (Integer num : numToRoman.keySet()) {
+            while (number >= num) {
+                romanNumeral += numToRoman.get(num);
+                number -= num;
+            }
+        }
+        return romanNumeral;
     }
 }

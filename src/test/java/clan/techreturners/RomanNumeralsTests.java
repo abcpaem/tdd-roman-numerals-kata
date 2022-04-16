@@ -1,6 +1,5 @@
 package clan.techreturners;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -56,15 +55,13 @@ public class RomanNumeralsTests {
         });
     }
 
-    @Test
-    void checkGetRomanNumber() {
-        // Arrange
-        String expectedRoman = "I";
-
-        // Act
-        String romanNumber = RomanNumerals.getRomanNumber(1);
-
-        // Assert
-        assertEquals(expectedRoman, romanNumber);
+    @ParameterizedTest(name = "{index}) Arabic number {0} is {1}")
+    @CsvSource(delimiterString = "->", textBlock = """
+            1 -> I
+            2 -> II
+            3 -> III
+            """)
+    void checkGetRomanNumber(int number, String expectedRomanNumeral) {
+        assertEquals(expectedRomanNumeral, RomanNumerals.getRomanNumeral(number));
     }
 }
