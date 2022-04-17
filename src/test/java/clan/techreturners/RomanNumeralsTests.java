@@ -69,6 +69,8 @@ public class RomanNumeralsTests {
             10 -> X
             40 -> XL
             50 -> L
+            90 -> XC
+            100 -> C
             """)
     void checkGetRomanNumber(int number, String expectedRomanNumeral) {
         assertEquals(expectedRomanNumeral, RomanNumerals.getRomanNumeral(number));
