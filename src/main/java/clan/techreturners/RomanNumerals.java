@@ -19,6 +19,8 @@ public class RomanNumerals {
     }};
 
     private static LinkedHashMap<Integer, String> numToRoman = new LinkedHashMap<>() {{
+        put(50, "L");
+        put(40, "XL");
         put(10, "X");
         put(9, "IX");
         put(5, "V");
