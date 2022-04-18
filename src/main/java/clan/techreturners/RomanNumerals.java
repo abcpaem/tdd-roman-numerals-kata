@@ -8,6 +8,7 @@ public class RomanNumerals {
 
     static final String ROMAN_NUMERAL_REG_EXP = "^M{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?$";
     static final String INVALID_ROMAN_NUMERAL = "Roman numeral is not valid or not supported";
+    static final String INVALID_ARABIC_NUMBER = "Arabic number is not valid or not supported";
     private static HashMap<Character, Integer> romanToNum = new HashMap<>() {{
         put('I', 1);
         put('V', 5);
@@ -58,6 +59,9 @@ public class RomanNumerals {
     }
 
     public static String getRomanNumeral(int number) {
+        if (number < 1 || number >= 4000)
+            throw new InvalidParameterException(INVALID_ARABIC_NUMBER);
+
         String romanNumeral = "";
         for (Integer num : numToRoman.keySet()) {
             while (number >= num) {

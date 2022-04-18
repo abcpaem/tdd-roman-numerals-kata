@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">95 ms</div>
+                <div class="time" xmlns="">109 ms</div>
                 <h1>
-                    RomanNumeralsTests: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">27 total, </span><span class="passed">27 passed</span></strong>
+                    RomanNumeralsTests: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">51 total, </span><span class="passed">51 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -593,26 +593,90 @@ jQuery.cookie = function(name, value, options) {
                 <ul id="tree">
                     <li xmlns="" class="level top open">
                         <span><em class="time">
-                                <div class="time">95 ms</div>
+                                <div class="time">109 ms</div>
                             </em>RomanNumeralsTests</span>
                         <ul>
                             <li class="level suite open">
                                 <span><em class="time">
-                                        <div class="time">63 ms</div>
-                                    </em>checkGetArabicNumberWhenRomanNumeralIsLowerCase(String, Integer)</span>
+                                        <div class="time">62 ms</div>
+                                    </em>checkGetRomanNumber(int, String)</span>
                                 <ul>
                                     <li class="level test">
                                         <span><em class="time">
-                                                <div class="time">47 ms</div>
-                                            </em><em class="status">passed</em>1) Roman numeral i is 1</span>
+                                                <div class="time">62 ms</div>
+                                            </em><em class="status">passed</em>1) Arabic number 1 is I</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>2) Arabic number 2 is II</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>3) Arabic number 3 is III</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>4) Arabic number 4 is IV</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>5) Arabic number 5 is V</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>6) Arabic number 6 is VI</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>7) Arabic number 7 is VII</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>8) Arabic number 8 is VIII</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>9) Arabic number 9 is IX</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>10) Arabic number 10 is X</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>11) Arabic number 40 is XL</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>12) Arabic number 50 is L</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>13) Arabic number 90 is XC</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>14) Arabic number 100 is C</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>15) Arabic number 400 is CD</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>16) Arabic number 500 is D</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>17) Arabic number 900 is CM</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>18) Arabic number 1000 is M</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>19) Arabic number 3999 is MMMCMXCIX</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">16 ms</div>
+                                    </em>checkGetArabicNumberWhenRomanNumeralIsLowerCase(String, Integer)</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>1) Roman numeral i is 1</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>2) Roman numeral ii is 2</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time">
                                                 <div class="time">16 ms</div>
-                                            </em><em class="status">passed</em>2) Roman numeral ii is 2</span>
-                                    </li>
-                                    <li class="level test">
-                                        <span><em class="time"></em><em class="status">passed</em>3) Roman numeral iii is 3</span>
+                                            </em><em class="status">passed</em>3) Roman numeral iii is 3</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time"></em><em class="status">passed</em>4) Roman numeral iv is 4</span>
@@ -623,29 +687,49 @@ jQuery.cookie = function(name, value, options) {
                                 </ul>
                             </li>
                             <li class="level suite open">
-                                <span><em class="time">
-                                        <div class="time">16 ms</div>
-                                    </em>checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String)</span>
+                                <span><em class="time"></em>checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String)</span>
                                 <ul>
                                     <li class="level test">
-                                        <span><em class="time"></em><em class="status">passed</em>1) Roman Numeral I̅V̅ is invalid or not supported yet</span>
+                                        <span><em class="time"></em><em class="status">passed</em>1) Roman Numeral I̅V̅ is invalid or not supported</span>
                                     </li>
                                     <li class="level test">
-                                        <span><em class="time"></em><em class="status">passed</em>2) Roman Numeral K is invalid or not supported yet</span>
+                                        <span><em class="time"></em><em class="status">passed</em>2) Roman Numeral K is invalid or not supported</span>
                                     </li>
                                     <li class="level test">
-                                        <span><em class="time"></em><em class="status">passed</em>3) Roman Numeral XXXX is invalid or not supported yet</span>
+                                        <span><em class="time"></em><em class="status">passed</em>3) Roman Numeral XXXX is invalid or not supported</span>
                                     </li>
                                     <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">16 ms</div>
-                                            </em><em class="status">passed</em>4) Roman Numeral XVIIII is invalid or not supported yet</span>
+                                        <span><em class="time"></em><em class="status">passed</em>4) Roman Numeral XVIIII is invalid or not supported</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>5) Roman Numeral   is invalid or not supported</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>6) Roman Numeral null is invalid or not supported</span>
                                     </li>
                                 </ul>
                             </li>
                             <li class="level suite open">
                                 <span><em class="time">
                                         <div class="time">16 ms</div>
+                                    </em>checkGetRomanNumberWhenArabicNumberIsInvalidOrNotSupported(int)</span>
+                                <ul>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>1) Arabic number 0 is invalid or not supported</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time"></em><em class="status">passed</em>2) Arabic number -1 is invalid or not supported</span>
+                                    </li>
+                                    <li class="level test">
+                                        <span><em class="time">
+                                                <div class="time">16 ms</div>
+                                            </em><em class="status">passed</em>3) Arabic number 4000 is invalid or not supported</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level suite open">
+                                <span><em class="time">
+                                        <div class="time">15 ms</div>
                                     </em>checkGetArabicNumber(String, Integer)</span>
                                 <ul>
                                     <li class="level test">
@@ -679,9 +763,7 @@ jQuery.cookie = function(name, value, options) {
                                         <span><em class="time"></em><em class="status">passed</em>10) Roman numeral X is 10</span>
                                     </li>
                                     <li class="level test">
-                                        <span><em class="time">
-                                                <div class="time">16 ms</div>
-                                            </em><em class="status">passed</em>11) Roman numeral XL is 40</span>
+                                        <span><em class="time"></em><em class="status">passed</em>11) Roman numeral XL is 40</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time"></em><em class="status">passed</em>12) Roman numeral L is 50</span>
@@ -690,7 +772,9 @@ jQuery.cookie = function(name, value, options) {
                                         <span><em class="time"></em><em class="status">passed</em>13) Roman numeral XC is 90</span>
                                     </li>
                                     <li class="level test">
-                                        <span><em class="time"></em><em class="status">passed</em>14) Roman numeral C is 100</span>
+                                        <span><em class="time">
+                                                <div class="time">15 ms</div>
+                                            </em><em class="status">passed</em>14) Roman numeral C is 100</span>
                                     </li>
                                     <li class="level test">
                                         <span><em class="time"></em><em class="status">passed</em>15) Roman numeral CD is 400</span>
@@ -712,7 +796,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by IntelliJ IDEA on 6/4/22 13:19</p>
+            <p>Generated by IntelliJ IDEA on 18/4/22 12:49</p>
         </div>
     </body>
 </html>

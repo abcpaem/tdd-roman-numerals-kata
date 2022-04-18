@@ -47,7 +47,7 @@ public class RomanNumeralsTests {
         assertEquals(expectedArabicNumber, RomanNumerals.getArabicNumber(romanNumeral));
     }
 
-    @ParameterizedTest(name = "{index}) Roman Numeral {0} is invalid or not supported yet")
+    @ParameterizedTest(name = "{index}) Roman Numeral {0} is invalid or not supported")
     @ValueSource(strings = {"I̅V̅", "K", "XXXX", "XVIIII", " ", "null"})
     void checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String romanNumeral) {
         assertThrows(InvalidParameterException.class, () -> {
@@ -75,8 +75,17 @@ public class RomanNumeralsTests {
             500 -> D
             900 -> CM
             1000 -> M
+            3999 -> MMMCMXCIX
             """)
     void checkGetRomanNumber(int number, String expectedRomanNumeral) {
         assertEquals(expectedRomanNumeral, RomanNumerals.getRomanNumeral(number));
+    }
+
+    @ParameterizedTest(name = "{index}) Arabic number {0} is invalid or not supported")
+    @ValueSource(ints = {0, -1, 4000})
+    void checkGetRomanNumberWhenArabicNumberIsInvalidOrNotSupported(int number) {
+        assertThrows(InvalidParameterException.class, () -> {
+            RomanNumerals.getRomanNumeral(number);
+        });
     }
 }

@@ -17,14 +17,15 @@ Plan out and spend 30-45 minutes having a go at the Roman Numerals Kata using Te
 ### Solution:
 - The solution is only a class helper with tests.
 - I started writing simple tests and at some point they were refactored as parameterised tests for simplification.
-- The code also started from a simple solution to make the initial tests pass, then evolving to a more complex code until it reached its refactoring stage.   
+- The code also started from a simple solution to make the initial tests pass, then evolving to a more complex code until it reached its refactoring stage.
+- Test cases were added for converting Roman numerals to Arabic numbers and from Arabic numbers to Roman numerals.
+- Finally, more tests were added for testing edge case scenarios, like empty strings, null, zero, negative numbers and numbers from 4000.   
 - Please check the commits to see how was the TDD process.
 - Please also feel free to clone the code and run all the tests locally.
 
-Click [here](https://htmlpreview.github.io/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html) to have quick overview of all the tests passing.
-**Note:** If you are unable to see the tests in the above link, please try [this one](https://htmlview.glitch.me/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html).
+To have a quick overview of all the tests passing, please click [here](https://htmlpreview.github.io/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html) or [here](https://htmlview.glitch.me/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html).
 
-Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests.
+Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests code.
 
 Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
 
