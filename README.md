@@ -7,7 +7,7 @@ A Kata in martial arts means “a system of individual training exercises”. Ju
 
 ### What is the goal?
 
-Plan out and spend 30-45 minutes having a go at the Roman Numerals Kata using Test-Driven Development. It is not expected to have a finished solution but have had a good go at using Test-Driven Development.
+Implement the Roman Numerals Kata using Test-Driven Development. 
 
 ### Instructions
 
@@ -30,7 +30,7 @@ Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see th
 Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
 
 ### What's next?:
-- Add more edge case tests, like when parameter passed is null or empty.
+- Add console application for user interaction with the converter.
 
 ---
 ## How to run the tests
