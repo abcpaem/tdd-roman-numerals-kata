@@ -29,7 +29,6 @@ Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see th
 Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
 
 ### What's next?:
-- Start implementing the conversion from Arabic numbers to roman numerals.
 - Add more edge case tests, like when parameter passed is null or empty.
 
 ---

@@ -48,10 +48,10 @@ public class RomanNumeralsTests {
     }
 
     @ParameterizedTest(name = "{index}) Roman Numeral {0} is invalid or not supported yet")
-    @ValueSource(strings = {"I̅V̅", "K", "XXXX", "XVIIII"})
+    @ValueSource(strings = {"I̅V̅", "K", "XXXX", "XVIIII", " ", "null"})
     void checkGetArabicNumberWhenRomanNumeralIsInvalidOrNotSupported(String romanNumeral) {
         assertThrows(InvalidParameterException.class, () -> {
-            RomanNumerals.getArabicNumber(romanNumeral);
+            RomanNumerals.getArabicNumber(romanNumeral.equals("null") ? null : romanNumeral);
         });
     }
 

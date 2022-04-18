@@ -35,15 +35,13 @@ public class RomanNumerals {
     }};
 
     public static int getArabicNumber(String romanNumber) {
-        romanNumber = romanNumber.toUpperCase();
-
-        if (!romanNumber.matches(ROMAN_NUMERAL_REG_EXP))
+        if (romanNumber == null || romanNumber.isBlank() || !romanNumber.toUpperCase().matches(ROMAN_NUMERAL_REG_EXP))
             throw new InvalidParameterException(INVALID_ROMAN_NUMERAL);
 
         int number = 0;
 
         // // Replaces some roman numerals for their equivalent in our known roman numerals list
-        romanNumber = romanNumber
+        romanNumber = romanNumber.toUpperCase()
                 .replace("IV", "IIII")
                 .replace("IX", "VIIII")
                 .replace("XL", "XXXX")
