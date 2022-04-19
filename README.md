@@ -19,7 +19,8 @@ Implement the Roman Numerals Kata using Test-Driven Development.
 - I started writing simple tests and at some point they were refactored as parameterised tests for simplification.
 - The code also started from a simple solution to make the initial tests pass, then evolving to a more complex code until it reached its refactoring stage.
 - Test cases were added for converting Roman numerals to Arabic numbers and from Arabic numbers to Roman numerals.
-- Finally, more tests were added for testing edge case scenarios, like empty strings, null, zero, negative numbers and numbers from 4000.   
+- More tests were added for testing edge case scenarios, like empty strings, null, zero, negative numbers and numbers from 4000.
+- Finally, a console application for user interaction was added.
 - Please check the commits to see how was the TDD process.
 - Please also feel free to clone the code and run all the tests locally.
 
@@ -29,13 +30,15 @@ Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see th
 
 Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
 
-### What's next?:
-- Add console application for user interaction with the converter.
-
 ---
-## How to run the tests
-- cd to the project root folder in the command line
-- ``mvn test``
+### How to run the application
+CD (change directory) to the project root folder in the command line, then:
+ 
+1) ``mvn compile``
+2) ``mvn exec:java -Dexec.mainClass=clan.techreturners.Main``
+
+To run tests:
+1) ``mvn test``
  
 ## Technology
 This project was built using:
