@@ -1,4 +1,4 @@
-package clan.techreturners;
+package clan.techreturners.romannumerals.kata;
 
 import java.security.InvalidParameterException;
 import java.util.Scanner;

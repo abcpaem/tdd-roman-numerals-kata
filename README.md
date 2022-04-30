@@ -26,16 +26,16 @@ Implement the Roman Numerals Kata using Test-Driven Development.
 
 To have a quick overview of all the tests passing, please click [here](https://htmlpreview.github.io/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html) or [here](https://htmlview.glitch.me/?https://github.com/abcpaem/tdd-roman-numerals-kata/blob/main/docs/RomanNumeralsTestsResults.html).
 
-Click [here](src/test/java/clan/techreturners/RomanNumeralsTests.java) to see the Roman Numerals tests code.
+Click [here](src/test/java/clan/techreturners/romannumerals/kata/RomanNumeralsTests.java) to see the Roman Numerals tests code.
 
-Click [here](src/main/java/clan/techreturners/RomanNumerals.java) to see the Roman Numerals code.
+Click [here](src/main/java/clan/techreturners/romannumerals/kata/RomanNumerals.java) to see the Roman Numerals code.
 
 ---
 ### How to run the application
 CD (change directory) to the project root folder in the command line, then:
  
 1) ``mvn compile``
-2) ``mvn exec:java -Dexec.mainClass=clan.techreturners.Main``
+2) ``mvn exec:java -Dexec.mainClass=clan.techreturners.romannumerals.kata.Main``
 
 To run tests:
 1) ``mvn test``
